@@ -1,0 +1,32 @@
+.footer {
+    font-family: "Roboto";
+    margin: 0px auto 10px;
+    min-height: 70px;
+    max-width: 270px;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transition: 0.3s ease;
+
+        a {
+            &:hover {
+                transform: translateY(-10%);
+            }
+        }
+    }
+
+    &__trademark {
+        padding: 10px;
+        font-size: small;
+        line-height: 1;
+        color: $light-blue-green;
+    }
+}

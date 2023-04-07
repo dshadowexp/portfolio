@@ -1,0 +1,70 @@
+.projects {
+    h2 {
+        margin-bottom: 3rem;
+        color: $bright-yellow;
+    }
+
+    ul {
+        display: grid;
+        gap: 25px;
+    }
+
+    .project {
+        list-style: none;
+        transition: 0.3s ease-in-out;
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 2rem 1.75rem ;
+            background-color: $light-navy;
+            box-shadow: 0 10px 30px -15px $navy-shadow;
+            border-radius: 4px;
+
+            .project {
+
+                &__top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 1.8rem;
+
+                    a {
+                        padding: 0 0.2rem;
+                    }
+                }
+            
+                &__title {
+                    font-weight: 600;
+                    line-height: 1.1;
+                    margin-bottom: 0.5rem;
+                    transition: color 0.3s ease-in-out;
+                }
+            
+                &__description {
+                    font-size: 13px;
+                }
+
+                &__bottom {
+                    list-style: none;
+                    margin-top: 1.2rem;
+                    display: flex;
+                    align-items: flex-end;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+
+        &:hover {
+            transform: translateY(-10px);
+
+            .project {
+                &__title {
+                    color: $light-blue-green;
+                }
+            }
+        }
+    }
+}

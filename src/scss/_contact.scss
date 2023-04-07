@@ -1,0 +1,65 @@
+.contact {
+    margin-bottom: 5.2rem;
+    
+    &__info {
+        margin-bottom: 2.5rem;
+
+        h2 {
+            color: $bright-yellow;
+        }
+
+        p {
+            margin-top: 15px;
+            color: $light-blue-green;
+            font-size: 0.9rem;
+        }
+    }
+
+    &__form {
+        label {
+            display: block;
+            font-size: 10px;
+            margin-bottom: 1.5rem;
+            font-weight: 200;
+    
+            &:focus-within {
+                color: $bright-yellow;
+            }
+    
+            input,
+            textarea {
+                width: 100%;
+                padding: 0.5rem 0;
+                display: block;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                border-bottom: 1px solid $light-grey;
+                color: $light-grey;
+                font-size: 300;
+                transition: 0.3s ease-in-out;
+    
+                &:focus {
+                    border-bottom: 1px solid $bright-yellow;
+                }
+    
+                &::placeholder {
+                    color: $light-grey;
+                }
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+
+        button {
+            background: transparent;
+            padding: 0.8rem 3rem;
+            border: 1px solid $bright-yellow;
+            border-radius: 0.2rem;
+            color: $bright-yellow;
+            text-transform: uppercase;
+        }
+    }
+}

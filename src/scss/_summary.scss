@@ -1,0 +1,110 @@
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: calc($nav-height);
+
+    &__primary {
+        article {
+            h5 {
+                padding: 10px 0;
+                color: $light-blue-green;
+            }
+
+            p {
+                margin: 1rem 0;
+                line-height: 1.6rem;
+                font-size: 1rem;
+
+                span {
+                    color: $light-blue-green;
+                }
+            }
+        }
+
+        .summary__secondary {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: start;
+            column-gap: 2rem;
+
+            .tools {
+                flex: 1;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 1rem;
+                
+                i {
+                    color: $light-blue-green;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $bright-yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    
+
+    &__figure {
+        width: 100%;
+        padding: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        figure {
+            position: relative;
+            background-color: $bright-yellow;
+            width: 200px;
+            height: 200px;
+            border-radius: 0.4rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 0.4rem;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 0;
+                }
+
+                &::after {
+                    margin-top: 0.8rem;
+                    margin-left: 0.8rem;
+                    background-color: $bright-yellow;
+                    border: none;
+                }
+            }
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 0.4rem;
+                transition: 0.3s ease-in-out;
+            }
+
+            &::before {
+                background-color: $bright-yellow;
+                opacity: 0.3;
+            }
+
+            &::after {
+                margin-top: 1rem;
+                margin-left: 1rem;
+                border-radius: 0.4rem;
+                border: 1px solid $bright-yellow;
+                z-index: -1;
+            }
+        }
+    }
+}
