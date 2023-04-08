@@ -8,7 +8,7 @@ header {
     left: 0;
     top: 0;
     backdrop-filter: blur(10px);
-    z-index: 900;
+    z-index: 1000;
 
     .header {
         width: 100%;
@@ -21,28 +21,45 @@ header {
         }
 
         &__links {
-            display: none;
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            width: 270px;
+            background-color: $dark-light;
+            box-shadow: 0 10px 30px -15px $navy-shadow;
+            border-radius: 10px;
+            transition: 0.5s ease-in-out;
 
             ul {
                 display: flex;
-                align-items: center;
-                list-style: none;
+                flex-direction: column;
+                justify-content: flex-start;
 
-                // li a {
-                    
-                // }
+                li a {
+                    display: block;
+                    margin: 15px 0;
+                    padding: 0px 25px;
+                    transition: 0.3s ease;
+                    color: $light-inner;
+                    text-transform: capitalize;
+
+                    &:hover {
+                        color: $light-blue-green;
+                        transform: translateY(3px);
+                    }
+                }
+
+                .cta {
+                    color: $bright-yellow;
+                    margin-bottom: 1rem;
+                }
             }
         }
-
-        .resume__cta {
-            padding: 0.4rem 1rem;
-            border-radius: 0.25rem;
-            border: 1px solid $bright-yellow;
-
-            a {
-                color: $bright-yellow;
-            }
+        
+        .open {
+            right: 2%
         }
+        
 
         &__hamburger {
             .menu__toggle {
@@ -51,9 +68,9 @@ header {
                 position: relative;
                 background-color: transparent;
                 display: inline-flex;
-                margin-top: 0.699em;
+                margin-top: 0.7em;
                 color: $bright-yellow;
-                z-index: 999;
+                z-index: 1001;
                 transition: 0.2s ease;
 
                 &::before, &::after {

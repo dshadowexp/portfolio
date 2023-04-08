@@ -5,11 +5,13 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Open Sans', 'Lato', sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 html {
     background: $dark-light;
-    font-family: 'Open Sans', 'Lato', sans-serif;
     color: $light-inner;
     scroll-behavior: smooth;
 }
@@ -42,4 +44,11 @@ section {
 h1 {
     font-size: 2rem;
     color: $bright-yellow;
+}
+
+@media (min-width: 580px) {
+    section {
+        height: 100vh;
+        padding-top: 0;
+    }
 }

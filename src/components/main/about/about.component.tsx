@@ -1,35 +1,37 @@
-import illustration from '../../../assets/undraw_firmware_re_fgdy.svg';
+import illustration from '../../../assets/rez-illus.gif';
 
 export default function About() {
-    return (<section className='about'>
+    return (<section id="about" className='about'>
             <article className='about__info'>
                 <div>
-                    <h2>In the span of time,</h2>
+                    <h2>Through my years,</h2>
                     <p>
-                        Hello! My name is Samuel and I enjoy creating things on the internet.
-                        My interest in computer science started back in 2016 in college where I
-                        wrote my first line of code in MatLab for an engineering course.
+                        I have always been interested in computers. I encounted the first opportunity 
+                        to learn programming at <span><a href="https://ousf.duke.edu/merit-scholarships/mastercard-foundation-scholars-program/" target="_blank">Duke University</a></span> during my undergraduate
+                        eduation. There, I honed my engineering skills using Java, Python, C, and C++.
                     </p>
                     <p>
-                        Fast-forward to today, I've built products for companies and businesses
-                        around the globe ranging from marketing websites to complex
-                        solutions and enterprise mobile apps with focus on fast, elegant,
-                        and accessible user experiences
+                        During summers, I interned at <span><a href="https://www.aerobotics.com/" target="_blank">Aerobotics</a></span> in Cape Town, South 
+                        Africa and at <span><a href="https://learn.microsoft.com/en-us/azure/active-directory/external-identities/what-is-b2b" target="_blank">Microsoft</a></span> 
+                        in Redmond, WA, USA. At this emerging startup and this large cooperation, I imbibed the skills of professional team collaboration 
+                        and engineering work ethics.
                     </p>
                     <p>
-                        Before now, I was Principal Frontend Engineer at hellotax, where I worked
-                        on a suite of tools and services tailored at providing fast, automated VAT 
-                        Registration / filings & Returns solutions for multi-channel sellers in Europe.
+                        After successfully completing my internship projects [<a href="https://www.aerobotics.com/farm" target="_blank">Tree Image Recognition</a> and <a href="https://learn.microsoft.com/en-us/azure/active-directory/external-identities/reset-redemption-status" target="_blank">Azure AD B2B Reset Redemption</a>],
+                        I have since worked on an ecommerce and on-deman delivery startup, Zulwinie Commerce limited, <a href="https://www.amazon.jobs/en/">Amazon</a>, <a href="https://www.turing.com/">Turing</a>, 
+                        and freelanced remotely.
                     </p>
                     <p>
-                        I once also led the frontend team at Conectar, an e-learning startup 
-                        through building multiple React applications into a single robust learning 
-                        platform.
+                        Currently, I am an expert in building robust backend systems with <span style={{color: "#37c0ba"}}>NodeJs</span>.
+                        I can deliver user friendly frontend experiences using <span style={{color: "#37c0ba"}}>ReactJs</span>. I enjoy exploring technologies
+                        and working with teams on a myriad range of projects.
                     </p>
                 </div>
             </article>
-            <figure className='about__illustration'>
-                <img src={illustration} alt="" />
-            </figure>
+            <div className='about__illustration'>
+                <figure>
+                    <img src={illustration} alt="logistics illustration" />
+                </figure>
+            </div>
     </section>);
 }

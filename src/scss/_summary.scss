@@ -25,22 +25,31 @@
 
         .summary__secondary {
             display: flex;
-            justify-content: space-evenly;
+            justify-content: flex-start;
             align-items: start;
             column-gap: 2rem;
 
             .tools {
-                flex: 1;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                row-gap: 1rem;
-                
-                i {
-                    color: $light-blue-green;
-                    transition: 0.3s ease-in-out;
+                &__name {
+                    padding: 0.4rem 0;
+                    font-size: 10px;
+                    line-height: 1.1;
+                    text-align: center;
+                }
 
-                    &:hover {
-                        color: $bright-yellow;
+                &__list {
+                    flex: 1;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    row-gap: 1rem;
+                
+                    i {
+                        color: $light-blue-green;
+                        transition: 0.3s ease-in-out;
+                
+                        &:hover {
+                            color: $bright-yellow;
+                        }
                     }
                 }
             }
@@ -58,14 +67,11 @@
 
         figure {
             position: relative;
-            background-color: $bright-yellow;
-            width: 200px;
-            height: 200px;
+            width: 150px;
             border-radius: 0.4rem;
 
             img {
                 width: 100%;
-                height: 100%;
                 border-radius: 0.4rem;
             }
 
@@ -106,5 +112,13 @@
                 z-index: -1;
             }
         }
+    }
+}
+
+@media (min-width: 580px) {
+    .summary {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 0;
     }
 }
