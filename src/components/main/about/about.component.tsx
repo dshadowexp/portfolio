@@ -12,13 +12,13 @@ export default function About() {
                     </p>
                     <p>
                         During summers, I interned at <span><a href="https://www.aerobotics.com/" target="_blank">Aerobotics</a></span> in Cape Town, South 
-                        Africa and at <span><a href="https://learn.microsoft.com/en-us/azure/active-directory/external-identities/what-is-b2b" target="_blank">Microsoft</a></span> 
-                        in Redmond, WA, USA. At this emerging startup and this large cooperation, I imbibed the skills of professional team collaboration 
+                        Africa and at <span><a href="https://learn.microsoft.com/en-us/azure/active-directory/external-identities/what-is-b2b" target="_blank">Microsoft</a></span> in 
+                        Redmond, WA, USA. At an emerging startup and a large cooperation (respectively), I imbibed the skills of professional team collaboration 
                         and engineering work ethics.
                     </p>
                     <p>
                         After successfully completing my internship projects [<a href="https://www.aerobotics.com/farm" target="_blank">Tree Image Recognition</a> and <a href="https://learn.microsoft.com/en-us/azure/active-directory/external-identities/reset-redemption-status" target="_blank">Azure AD B2B Reset Redemption</a>],
-                        I have since worked on an ecommerce and on-deman delivery startup, Zulwinie Commerce limited, <a href="https://www.amazon.jobs/en/">Amazon</a>, <a href="https://www.turing.com/">Turing</a>, 
+                        I have since worked on an ecommerce and on-demand delivery startup [Zulwinie Commerce limited], at <a href="https://www.amazon.jobs/en/">Amazon</a>, <a href="https://www.turing.com/">Turing</a>, 
                         and freelanced remotely.
                     </p>
                     <p>

@@ -72,7 +72,7 @@ export default function Contact() {
                         </textarea>
                     </label>
                     <div className="contact__action">
-                        <button>Shoot</button>
+                        <button type='submit'>Shoot</button>
                     </div>
                 </form>
             </div>
