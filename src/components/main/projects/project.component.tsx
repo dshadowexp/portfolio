@@ -18,8 +18,8 @@ export default function Project({ project }: ProjectProp) {
                     <i className='bx bx-folder bx-md'></i>
                 </div>
                 <div>
-                    <a href={project.githubLink}><i className='bx bxl-git bx-sm'></i></a>
-                    <a href={project.externalLink}><i className='bx bx-link bx-sm'></i></a>
+                    {project.githubLink ? <a href={project.githubLink}><i className='bx bxl-git bx-sm'></i></a> : <span></span>}
+                    {project.externalLink ? <a href={project.externalLink}><i className='bx bx-link bx-sm'></i></a> : <span></span>}
                 </div>
             </div>
             <h3 className="project__title">{ project.title }</h3>
